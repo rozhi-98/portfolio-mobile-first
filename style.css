@@ -109,6 +109,7 @@ body {
   display: flex;
   justify-content: flex-start;
 }
+
 .social-list {
   list-style: none;
   width: 55%;
@@ -134,7 +135,7 @@ body {
 .card {
   box-sizing: border-box;
   border-radius: 1.6rem;
-  background-color: #ffffff;
+  background-color: #fff;
   width: 100%;
   margin: 0 auto;
   border: 1px solid #dfe1e6;
@@ -206,7 +207,7 @@ body {
   display: flex;
   flex-direction: column;
   background-size: cover;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .about-container {
@@ -261,4 +262,3 @@ body {
   font-size: 1.5rem;
   gap: 2rem;
 }
-
