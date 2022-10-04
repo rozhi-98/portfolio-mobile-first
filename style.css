@@ -324,27 +324,30 @@ body {
 }
 
 .form-list-text {
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   background: var(--color-white);
   padding: 1.5rem;
   width: 98%;
   display: flex;
 }
+
 .form-list-text input,
 textarea {
   width: 100%;
   border: none;
 }
+
 .form-list-text input::placeholder {
   font-weight: 400;
   font-size: 1.7rem;
   line-height: 2rem;
-  color: #172B4D;
+  color: #172b4d;
 }
+
 .form-list-text textarea::placeholder {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 2.4rem;
-  color: #B3BAC5;
+  color: #b3bac5;
 }
