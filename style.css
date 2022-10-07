@@ -1,7 +1,7 @@
 :root {
   --color-body: #344563;
   --color-logo: #6070ff;
-  --color-primary: #172b4d;
+  --color-primary: #091e42;
   --color-secondary: #7f8cff;
   --color-card-title: #172b4d;
   --color-background: #f7f7f7;
@@ -119,6 +119,10 @@ body {
   justify-content: space-between;
 }
 
+.desktop-cards-container {
+  display: none;
+}
+
 /* Works section */
 
 .section-works {
@@ -141,6 +145,12 @@ body {
   margin: 0 auto;
   border: 1px solid #dfe1e6;
   padding: 1.6rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card-content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -218,13 +228,11 @@ body {
 
 /* About Section */
 .section-about {
-  background-repeat: no-repeat;
   padding-top: 10rem;
-  background-position: center;
   display: flex;
   flex-direction: column;
-  background-size: cover;
   background-color: var(--color-white);
+  gap: 2.4rem;
 }
 
 .about-container {
@@ -281,7 +289,7 @@ body {
 }
 
 /* footer section */
-.container-about-me {
+.container-contact-me {
   margin-top: 10rem;
   padding-top: 10rem;
   background-color: var(--color-logo);
@@ -294,7 +302,7 @@ body {
   border-top-left-radius: 8rem;
 }
 
-.container-about-me form {
+.container-contact-me form {
   padding: 0 2rem;
 }
 
@@ -302,7 +310,7 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 2rem;
   text-align: center;
 }
@@ -350,4 +358,94 @@ textarea {
   font-size: 1.5rem;
   line-height: 2.4rem;
   color: #b3bac5;
+}
+
+.form-list button {
+  align-self: flex-start;
+}
+
+.card img {
+  width: 100%;
+}
+
+.cards-desktop, .cards-desktop-list {
+  display: none;
+}
+
+/* adding media queries for desktop version */
+@media (min-width: 768px) {
+  .linked-list {
+    display: flex;
+    color: var(--color-primary);
+  }
+
+  .section-hero {
+    background-image: url(images/hero-desktop.svg);
+    padding: 5rem;
+  }
+
+  .hero-container {
+    width: 60%;
+    padding: 5rem;
+    margin: 5rem auto;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards-phone, .nav-icon {
+    display: none;
+  }
+
+  .cards-desktop {
+    display: flex;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem auto;
+    padding-left: 1rem;
+  }
+
+  .cards-desktop-list {
+    display: list-item;
+  }
+
+  .section-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .language-list {
+    gap: 1rem;
+    flex-direction: column;
+    padding: 1rem 4rem 1rem 1rem;
+  }
+
+  .container-contact-me {
+   background-image: url(images/contact\ form\ background\ shapes-desktop.svg);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .container-contact-me form {
+    width: 50%;
+    margin:2rem auto 12rem  ;
+  }
+
+  .form-list button {
+    align-self: center;
+  }
 }
