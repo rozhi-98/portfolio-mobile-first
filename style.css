@@ -39,7 +39,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--color-background);
+  background-color: var(--color-white);
 }
 
 .header-container {
@@ -280,12 +280,19 @@ body {
 .language-list {
   display: flex;
   align-items: center;
-  padding: 1rem 15rem;
+  padding: 1rem 10rem;
   padding-left: 1rem;
   background: var(--color-background);
   border-radius: 0.8rem;
   font-size: 1.5rem;
   gap: 2rem;
+}
+
+.language-list-items {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #253858;
 }
 
 /* footer section */
@@ -391,6 +398,10 @@ textarea {
     margin: 5rem auto;
   }
 
+  .social-list {
+    width: 30%;
+  }
+
   .card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -431,7 +442,8 @@ textarea {
   .language-list {
     gap: 1rem;
     flex-direction: column;
-    padding: 1rem 4rem 1rem 1rem;
+    width: 15%;
+    align-items: flex-start;
   }
 
   .container-contact-me {
