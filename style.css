@@ -368,7 +368,8 @@ textarea {
   width: 100%;
 }
 
-.cards-desktop, .cards-desktop-list {
+.cards-desktop,
+.cards-desktop-list {
   display: none;
 }
 
@@ -395,7 +396,8 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .cards-phone, .nav-icon {
+  .cards-phone,
+  .nav-icon {
     display: none;
   }
 
@@ -433,16 +435,16 @@ textarea {
   }
 
   .container-contact-me {
-   background-image: url(images/contact\ form\ background\ shapes-desktop.svg);
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+    background-image: url(images/contact\ form\ background\ shapes-desktop.svg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .container-contact-me form {
     width: 50%;
-    margin:2rem auto 12rem  ;
+    margin: 2rem auto 12rem;
   }
 
   .form-list button {
