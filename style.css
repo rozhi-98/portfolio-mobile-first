@@ -48,6 +48,12 @@ body {
   align-items: center;
 }
 
+.logo:hover,
+.logo:focus {
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+
 .row {
   width: 88%;
   margin: 0 auto;
@@ -117,6 +123,11 @@ body {
   display: flex;
   padding: 0;
   justify-content: space-between;
+}
+
+.social-icons:hover,
+.social-icons:focus {
+  transform: translate(-20%, -20%);
 }
 
 .desktop-cards-container {
@@ -208,7 +219,7 @@ body {
   color: #396df2;
   align-self: flex-start;
   margin-bottom: 1.2rem;
-  transition-duration: 0.5s;
+  transition: 1s;
 }
 
 .button:hover {
@@ -373,6 +384,13 @@ textarea {
 
 .card img {
   width: 100%;
+}
+
+.card img:hover,
+.card img:focus {
+  width: 100%;
+  transform: scale(96%);
+  transition-duration: 1s;
 }
 
 .cards-desktop,
