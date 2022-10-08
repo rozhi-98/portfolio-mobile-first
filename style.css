@@ -386,7 +386,8 @@ textarea {
   width: 100%;
 }
 
-.card img:hover, .card img:focus {
+.card img:hover,
+.card img:focus {
   width: 100%;
   transform: scale(96%);
   transition-duration: 1s;
