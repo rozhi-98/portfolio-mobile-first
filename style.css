@@ -48,7 +48,8 @@ body {
   align-items: center;
 }
 
-.logo:hover, .logo:focus {
+.logo:hover,
+.logo:focus {
   transform: rotate(360deg);
   transition-duration: 1s;
 }
@@ -124,7 +125,8 @@ body {
   justify-content: space-between;
 }
 
-.social-icons:hover, .social-icons:focus {
+.social-icons:hover,
+.social-icons:focus {
   transform: translate(-20%, -20%);
 }
 
