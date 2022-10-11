@@ -11,8 +11,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
 
-This is a live demo of my website, please feel free to visit it: (file:///C:/Users/Rozh/portfolio-mobile-first/index.html)
-
+This is a live demo of my website, please feel free to visit it: https://rozhi-98.github.io/portfolio-mobile-first/
 
 ## Getting Started
 In this project, I have used linters which is a code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs. I have followed git and github flow to document my project in a professional way. I have not added any changes directly to the main branch since I know that it will only damage my project. 
