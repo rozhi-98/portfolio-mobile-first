@@ -19,11 +19,12 @@ closeBtn.addEventListener('click', () => {
 
 const listItem = document.querySelectorAll('.list-item');
 
-listItem.foreach((item) => {
+listItem.forEach((item) => {
   item.addEventListener('click', (a) => {
     const id = a.currentTarget.getAttribute('href').slice(1);
     const element = document.getElementById(id);
     const position = element.offsetTop;
+    console.log(id);
 
     if (id) {
       navLinks.classList.remove('show-menu');
