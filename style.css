@@ -66,12 +66,44 @@ body {
   font-style: normal;
   color: var(--color-logo);
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
 }
 
-.linked-list {
-  display: none;
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background-color: var(--color-logo);
+  backdrop-filter: blur(0.5rem);
+  position: fixed;
+  transform: translateX(100%);
+  transition: all 1s ease-in-out;
+  mix-blend-mode: multiply;
+}
+
+.show-menu {
+  transform: translateX(0);
+}
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.nav-items {
+  gap: 2rem;
+  letter-spacing: 0.5px;
   list-style: none;
-  gap: 4rem;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 4.4rem;
+  color: var(--color-white);
+  padding: 3rem 0 3rem 2rem;
 }
 
 /* Section hero */
@@ -400,8 +432,12 @@ textarea {
 
 /* adding media queries for desktop version */
 @media (min-width: 768px) {
-  .linked-list {
+  .nav-links,
+  .nav-items {
     display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 4rem;
     color: var(--color-primary);
   }
 
