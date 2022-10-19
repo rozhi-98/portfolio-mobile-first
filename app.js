@@ -1,6 +1,5 @@
 const navIcon = document.querySelector('.nav-icon');
 const navLinks = document.querySelector('.nav-links');
-// close menu when close button is pressed
 const closeBtn = document.querySelector('.close-btn');
 
 // open mobile menu
@@ -8,6 +7,8 @@ const closeBtn = document.querySelector('.close-btn');
 navIcon.addEventListener('click', () => {
   navLinks.classList.toggle('show-menu');
 });
+
+// close menu when close button is pressed
 
 closeBtn.addEventListener('click', () => {
   if (navLinks.classList.contains('show-menu')) {
@@ -24,7 +25,6 @@ listItem.forEach((item) => {
     const id = a.currentTarget.getAttribute('href').slice(1);
     const element = document.getElementById(id);
     const position = element.offsetTop;
-    console.log(id);
 
     if (id) {
       navLinks.classList.remove('show-menu');
