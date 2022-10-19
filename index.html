@@ -31,11 +31,30 @@
               fill="#6070FF"
             />
           </svg>
-          <ul class="linked-list">
-            <li class="list-item">Portfolio</li>
-            <li class="list-item">About</li>
-            <li class="list-item">Contact</li>
-          </ul>
+          <div class="nav-links">
+            <span>
+              <svg
+                class="close-btn"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M13.2929 13.2929C13.6834 12.9024 14.3166 12.9024 14.7071 13.2929L20 18.5858L25.2929 13.2929C25.6834 12.9024 26.3166 12.9024 26.7071 13.2929C27.0976 13.6834 27.0976 14.3166 26.7071 14.7071L21.4142 20L26.7071 25.2929C27.0976 25.6834 27.0976 26.3166 26.7071 26.7071C26.3166 27.0976 25.6834 27.0976 25.2929 26.7071L20 21.4142L14.7071 26.7071C14.3166 27.0976 13.6834 27.0976 13.2929 26.7071C12.9024 26.3166 12.9024 25.6834 13.2929 25.2929L18.5858 20L13.2929 14.7071C12.9024 14.3166 12.9024 13.6834 13.2929 13.2929Z"
+                  fill="white"
+                />
+              </svg>
+            </span>
+            <ul class="nav-items">
+              <li><a class="list-item" href="#portfolio">Portfolio</a></li>
+              <li><a class="list-item" href="#about">About</a></li>
+              <li><a class="list-item" href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -139,7 +158,7 @@
           </div>
         </div>
       </section>
-      <section class="section-works">
+      <section id="portfolio" class="section-works">
         <div class="cards-container row">
           <div class="card">
             <img
@@ -298,7 +317,7 @@
           </div>
         </div>
       </section>
-      <section class="section-about">
+      <section id="about" class="section-about">
         <div class="about-container row">
           <h2 class="primary-text">About Myself</h2>
           <p>
@@ -415,20 +434,22 @@
                 />
               </svg>
             </li>
-            <ul class="languages">
-              <li class="language-list">
-                <img src="images/javascriptLogo.svg" alt="javascript-logo" />
-                <p class="language-list-items">javaScript</p>
-              </li>
-              <li class="language-list">
-                <img src="images/htmlLogo.svg" alt="HTML-logo" />
-                <p class="language-list-items">HTML</p>
-              </li>
-              <li class="language-list">
-                <img src="images/cssLogo.svg" alt="CSS-logo" />
-                <p class="language-list-items">CSS</p>
-              </li>
-            </ul>
+            <li class="list-content">
+              <ul class="languages">
+                <li class="language-list">
+                  <img src="images/javascriptLogo.svg" alt="javascript-logo" />
+                  <p class="language-list-items">javaScript</p>
+                </li>
+                <li class="language-list">
+                  <img src="images/htmlLogo.svg" alt="HTML-logo" />
+                  <p class="language-list-items">HTML</p>
+                </li>
+                <li class="language-list">
+                  <img src="images/cssLogo.svg" alt="CSS-logo" />
+                  <p class="language-list-items">CSS</p>
+                </li>
+              </ul>
+            </li>
             <li class="list-content">
               <h6>Frameworks</h6>
               <svg
@@ -466,7 +487,7 @@
       </section>
     </main>
     <footer>
-      <div class="container-contact-me">
+      <div id="contact" class="container-contact-me">
         <form action="https://formspree.io/f/xoqbwkba" method="post">
           <ul class="form-list">
             <li><h2>Contact me</h2></li>
@@ -500,18 +521,19 @@
               <textarea
                 required="required"
                 name="text-description"
-                id=""
                 cols="30"
                 rows="10"
                 maxlength="50"
                 placeholder="write your message here"
               ></textarea>
             </li>
-
-            <button class="button" type="submit">Get in touch</button>
+            <li class="form-list-text">
+              <button class="button" type="submit">Get in touch</button>
+            </li>
           </ul>
         </form>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>

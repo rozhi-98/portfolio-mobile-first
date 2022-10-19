@@ -19,6 +19,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -66,12 +67,51 @@ body {
   font-style: normal;
   color: var(--color-logo);
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
 }
 
-.linked-list {
-  display: none;
-  list-style: none;
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background-color: var(--color-logo);
+  backdrop-filter: blur(0.8rem);
+  position: fixed;
+  transform: translateX(100%);
+  transition: all 1s ease-in-out;
+  mix-blend-mode: multiply;
   gap: 4rem;
+}
+
+.show-menu {
+  transform: translateX(0);
+}
+
+.close-btn {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+}
+
+.nav-items {
+  padding: 2rem;
+}
+
+.nav-items li {
+  list-style: none;
+  padding-bottom: 0.5rem;
+}
+
+.nav-items li a {
+  letter-spacing: 0.05rem;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 5.5rem;
+  color: var(--color-white);
 }
 
 /* Section hero */
@@ -400,9 +440,30 @@ textarea {
 
 /* adding media queries for desktop version */
 @media (min-width: 768px) {
-  .linked-list {
+  .nav-links {
     display: flex;
+    flex-direction: row-reverse;
+    transform: translateX(0);
+    height: 6rem;
+    justify-content: flex-start;
+    position: relative;
+    background: none;
+  }
+
+  .nav-items {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .nav-items li a {
     color: var(--color-primary);
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .nav-links span {
+    display: none;
   }
 
   .section-hero {
