@@ -106,14 +106,6 @@ body {
   padding-bottom: 0.5rem;
 }
 
-.nav-items li a {
-  letter-spacing: 0.05rem;
-  font-size: 3.2rem;
-  font-weight: 500;
-  line-height: 5.5rem;
-  color: var(--color-white);
-}
-
 /* Section hero */
 .section-hero {
   min-height: calc(100vh - 6rem);
@@ -265,6 +257,7 @@ body {
 .form-button {
   background: var(--color-background);
 }
+
 /* About Section */
 .section-about {
   padding-top: 10rem;
@@ -505,6 +498,14 @@ textarea {
   gap: 1.2rem;
 }
 
+.nav-items li a {
+  letter-spacing: 0.05rem;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 5.5rem;
+  color: var(--color-white);
+}
+
 .popup-icons {
   height: 2rem;
   width: 2rem;
@@ -583,16 +584,16 @@ textarea {
     display: flex;
   }
 
-  .reverse .card-content {
-    order: -1;
-  }
-
   .card-content {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     margin: 2rem auto;
     padding-left: 1rem;
+  }
+
+  .reverse .card-content {
+    order: -1;
   }
 
   .cards-desktop-list {
@@ -642,6 +643,7 @@ textarea {
   .popup {
     width: 80%;
   }
+
   .popup-close-icon {
     margin-bottom: 0.5rem;
     fill: rgb(101, 101, 101);

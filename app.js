@@ -172,6 +172,8 @@ const generatePopupMarkup = (obj) => {
   return popupMarkup;
 };
 
+// const openPopupCard = document.querySelector('.')
+
 const openPopupCard = (id) => {
   const activePopupData = cardArr.find((el) => el.id === `${id}`);
 
@@ -212,8 +214,8 @@ const cardsMarkupGen = (obj) => {
                 ${techList2}
               </ul>
               <a href="#" onclick="openPopupCard(${
-                obj.id
-              })" class="button">See Project</a>
+  obj.id
+})" class="button">See Project</a>
             </div>
           </div> 
           `;
@@ -225,7 +227,7 @@ const cardsMarkupGen = (obj) => {
 
 // const closeButtonTwo = document.querySelector('.popup-close-icon');
 
-closePopup = (e) => {
+const closePopup = (e) => {
   const clicked = e.target.closest('.popup-close-icon');
   if (!clicked) return;
   document.querySelector('.popup-container').innerHTML = '';
