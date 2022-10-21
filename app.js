@@ -174,6 +174,7 @@ const generatePopupMarkup = (obj) => {
 
 // const openPopupCard = document.querySelector('.')
 
+// eslint-disable-next-line no-unused-vars
 const openPopupCard = (id) => {
   const activePopupData = cardArr.find((el) => el.id === `${id}`);
 
@@ -190,42 +191,35 @@ const cardsMarkupGen = (obj) => {
 
   const cardsMarkup = `
   <div class="card  ${(obj.id * 1) % 2 === 0 ? 'reverse' : ''}">
-            <img
-              class="cards-desktop cards-phone"
-              src="${obj.img}"
-              src="${obj.img2}"
-              alt="${obj.title}"
-            />
-            <div class="card-content">
-              <h2 class="card-title">${obj.title}</h2>
-              <div class="card-frame-one">
-                <h4 class="card-client">${obj.client}</h4>
-                <ul class="card-list">
-                  ${listItems}
-                </ul>
-              </div>
-              <p class="card-info">
-                ${obj.description}
-              </p>
-              <ul class="card-tags cards-phone">
-                ${techList}
-              </ul>
-              <ul class="card-tags cards-desktop">
-                ${techList2}
-              </ul>
-              <a href="#" onclick="openPopupCard(${
-  obj.id
-})" class="button">See Project</a>
-            </div>
-          </div> 
-          `;
-  // closeButtonTwo.addEventListener('click', () => {
-  //   popup.
-  // })
+   <img
+      class="cards-desktop cards-phone"
+      src="${obj.img}"
+      src="${obj.img2}"
+      alt="${obj.title}"
+      />
+   <div class="card-content">
+      <h2 class="card-title">${obj.title}</h2>
+      <div class="card-frame-one">
+         <h4 class="card-client">${obj.client}</h4>
+         <ul class="card-list">
+            ${listItems}
+         </ul>
+      </div>
+      <p class="card-info">
+         ${obj.description}
+      </p>
+      <ul class="card-tags cards-phone">
+         ${techList}
+      </ul>
+      <ul class="card-tags cards-desktop">
+         ${techList2}
+      </ul>
+      <a href="#" onclick="openPopupCard(${obj.id})" class="button">See Project</a>
+   </div>
+</div> 
+`;
   return cardsMarkup;
 };
-
-// const closeButtonTwo = document.querySelector('.popup-close-icon');
 
 const closePopup = (e) => {
   const clicked = e.target.closest('.popup-close-icon');
