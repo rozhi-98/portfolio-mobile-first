@@ -242,3 +242,6 @@ const injectCards = () => {
 };
 
 injectCards();
+popupContainer.addEventListener('click', (e) => {
+  closePopup(e);
+});
