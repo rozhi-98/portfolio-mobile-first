@@ -166,7 +166,6 @@ const generatePopupMarkup = (obj) => {
           </div>
         </div>
       </div>
-  
   `;
 
   return popupMarkup;
@@ -214,7 +213,9 @@ const cardsMarkupGen = (obj) => {
       <ul class="card-tags cards-desktop">
          ${techList2}
       </ul>
-      <a href="#" onclick="openPopupCard(${obj.id})" class="button">See Project</a>
+      <a href="#" onclick="openPopupCard(${
+        obj.id
+      })" class="button">See Project</a>
    </div>
 </div> 
 `;
@@ -240,4 +241,21 @@ const injectCards = () => {
 injectCards();
 popupContainer.addEventListener('click', (e) => {
   closePopup(e);
+});
+
+//creating form validations
+const form = document.querySelector('.form');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = document.getElementById('email').value.trim();
+  const alert = document.querySelector('.alert');
+
+  const Regx = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+
+  if (Regx.test(email) === true) {
+    form.submit();
+    form.reset();
+  } else {
+    alert.textContent = 'email has to be in lowercase format';
+  }
 });
