@@ -293,5 +293,24 @@ function test() {
   localStorage.setItem('Inputmessage', Inputmessage);
 }
 
+if (storageAvailable('localStorage')) {
+  const forminputs = [form.Inputname, form.Inputemail, form.Inputmessage];
+  forminputs.forEach((forminput) => {
+    forminput.addEventListener('input', () => {
+      const localData = {
+        Inputname: form.Inputname.value,
+        Inputemail: form.Inputemail.value,
+        Inputmessage: form.Inputmessage.value,
+      };
+      localStorage.setItem('inputs', JSON.stringify(localData));
+    });
+  });
+  const getData = JSON.parse(localStorage.getItem('inputs'));
+
+  form.Inputname.value = getData.Inputname;
+  form.Inputemail.value = getData.Inputemail;
+  form.Inputmessage.value = getData.Inputmessage;
+}
+
 const submit = document.querySelector('submit-btn');
 submit.addEventListener('submit', test());
