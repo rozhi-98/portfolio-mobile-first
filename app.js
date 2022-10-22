@@ -214,8 +214,8 @@ const cardsMarkupGen = (obj) => {
          ${techList2}
       </ul>
       <a href="#" onclick="openPopupCard(${
-        obj.id
-      })" class="button">See Project</a>
+  obj.id
+})" class="button">See Project</a>
    </div>
 </div> 
 `;
@@ -243,7 +243,7 @@ popupContainer.addEventListener('click', (e) => {
   closePopup(e);
 });
 
-//creating form validations
+// creating form validations
 const form = document.querySelector('.form');
 form.addEventListener('submit', (e) => {
   e.preventDefault();

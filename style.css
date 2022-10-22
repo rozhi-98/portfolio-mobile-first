@@ -527,13 +527,20 @@ textarea {
   color: #5e6c84;
 }
 
+.form input,
+.form textarea {
+  outline: none;
+  border: none;
+}
+
 .alert {
   width: 60%;
   margin: 0 auto;
-  /* border: 1px solid var(--color-background); */
   font-weight: 300;
   font-size: 2rem;
   padding-top: 1.8rem;
+  color: red;
+  text-shadow: 5px 5px 10px #fff;
 }
 
 /* adding media queries for desktop version */
