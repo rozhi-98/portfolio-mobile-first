@@ -400,7 +400,7 @@ textarea {
 }
 
 .form-list button {
-  align-self: flex-start;
+  align-self: center;
 }
 
 .card img {
@@ -527,6 +527,22 @@ textarea {
   color: #5e6c84;
 }
 
+.form input,
+.form textarea {
+  outline: none;
+  border: none;
+}
+
+.alert {
+  width: 60%;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 2rem;
+  padding-top: 1.8rem;
+  color: red;
+  text-shadow: 5px 5px 10px #fff;
+}
+
 /* adding media queries for desktop version */
 @media (min-width: 768px) {
   .nav-links {
@@ -629,10 +645,6 @@ textarea {
   .container-contact-me form {
     width: 50%;
     margin: 2rem auto 12rem;
-  }
-
-  .form-list button {
-    align-self: center;
   }
 
   .popup-content {

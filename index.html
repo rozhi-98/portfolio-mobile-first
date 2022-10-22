@@ -366,7 +366,11 @@
     </main>
     <footer>
       <div id="contact" class="container-contact-me">
-        <form action="https://formspree.io/f/xoqbwkba" method="post">
+        <form
+          class="form"
+          action="https://formspree.io/f/xoqbwkba"
+          method="post"
+        >
           <ul class="form-list">
             <li><h2>Contact me</h2></li>
             <li>
@@ -405,17 +409,16 @@
                 placeholder="write your message here"
               ></textarea>
             </li>
-
-            <a class="button form-button" href="#" type="submit"
-              >Get in touch</a
-            >
+            <button class="button form-button" onclick="test()" type="submit">
+              Get in Touch
+            </button>
+            <span class="alert"></span>
           </ul>
         </form>
       </div>
     </footer>
 
-    <div class="popup-container">
-    </div>
+    <div class="popup-container"></div>
     <script src="app.js"></script>
   </body>
 </html>
